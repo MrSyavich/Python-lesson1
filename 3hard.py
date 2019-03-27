@@ -16,16 +16,16 @@ surname = input('Введите фамилию: ')
 age = int(input('Введите свой возраст: '))
 weight = int(input('Введте ваш вес: '))
 
-if age < 30 and weight > 50 and weight < 120:
+if age < 30 or 50 < weight < 120:
     print(name, surname, ',', age, 'год,', ' - хорошее состояние')
 
-    if age > 30 and weight < 50 and weight > 120:
+elif 30 < age < 40 or 50 > weight > 120:
         print(name, surname, ',', age, 'год,', ' - требуется начать вести правильный образ жизни')
 
-    if age > 40 and weight < 50 and weight > 120:
+elif 40 < age < 50 or 50 > weight > 120:
         print(name, surname, ',', age, 'год,', ' - требуется врачебный осмотр')
 
-    if age > 50 and weight < 50 and weight > 120:
-        print(name, surname, ',', age, 'год,', ' - до пенсии не дотянешь :(')
-
+else:
+    age > 50 or 50 > weight > 120
+    print(name, surname, ',', age, 'год,', ' - до пенсии не дотянешь :(')
 
